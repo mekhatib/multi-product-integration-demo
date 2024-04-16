@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "tfe" {
-token = var.tfe_token
+token = var.tfc_token
 }
 
 resource "tfe_workspace" "networking" {
