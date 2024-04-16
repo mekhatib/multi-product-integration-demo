@@ -17,3 +17,6 @@ variable "repo_branch" {
 variable "oauth_token_id" {
   type = string
 }
+variable "tfc_token" {
+  type = string
+}
