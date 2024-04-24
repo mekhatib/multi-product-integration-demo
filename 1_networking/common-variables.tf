@@ -14,7 +14,7 @@ variable "tfc_organization" {
   type = string
 }
 
-variable "auth_method" {
-  type = string
-}
+#variable "auth_method" {
+#  type = string
+#}
 
