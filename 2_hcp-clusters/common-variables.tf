@@ -14,7 +14,7 @@ variable "region" {
   type = string
 }
 
-variable "auth_method" {
-  type = string
-}
+#variable "auth_method" {
+#  type = string
+#}
 
