@@ -57,7 +57,7 @@ resource "vault_policy" "admin" {
 }
 
 data "tfe_project" "project" {
-  name = "hashistack"
+  name = "demostack"
   organization = "${var.tfc_organization}"
 }
 
