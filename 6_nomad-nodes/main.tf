@@ -52,7 +52,8 @@ data "vault_kv_secret_v2" "bootstrap" {
 
 provider "nomad" {
   address = data.terraform_remote_state.nomad_cluster.outputs.nomad_public_endpoint
-  secret_id = data.vault_kv_secret_v2.bootstrap.data["SecretID"]
+  secret_id="hashistack-admin"
+  #secret_id = data.vault_kv_secret_v2.bootstrap.data["SecretID"]
 }
 
 data "terraform_remote_state" "networking" {
