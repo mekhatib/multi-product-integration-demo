@@ -45,10 +45,10 @@ provider "aws" {
 
 provider "vault" {}
 
-data "vault_kv_secret_v2" "bootstrap" {
-  mount = data.terraform_remote_state.nomad_cluster.outputs.bootstrap_kv
-  name  = "nomad_bootstrap/SecretID"
-}
+#data "vault_kv_secret_v2" "bootstrap" {
+#  mount = data.terraform_remote_state.nomad_cluster.outputs.bootstrap_kv
+#  name  = "nomad_bootstrap/SecretID"
+#}
 
 provider "nomad" {
   address = data.terraform_remote_state.nomad_cluster.outputs.nomad_public_endpoint
