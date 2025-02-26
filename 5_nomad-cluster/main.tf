@@ -300,7 +300,7 @@ resource "null_resource" "bootstrap_acl" {
   depends_on = [ vault_mount.kvv2 ]
   provisioner "local-exec" {
     command = <<EOF
-    sleep 60  # wait for the instances in ASG to be up and running
+    sleep 120  # wait for the instances in ASG to be up and running
     MAX_RETRIES=10
     COUNT=0
     while [ $COUNT -lt $MAX_RETRIES ]; do
